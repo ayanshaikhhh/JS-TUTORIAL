@@ -388,54 +388,218 @@ age.splice(2, 1, 25); // Replace the element at index 2 with 25
 console.log(age);
 */
 
-
+/*
 let age = [
     [10, 20, 30, 40, 50, 60, 70],
     [11, 21, 31, 41, 51, 61, 71],
     [12, 22, 32, 42, 52, 62, 72],
     [13, 23, 33, 43, 53, 63, 73]
 ]
+*/
 
 // console.log(age[0][1]);
 // console.log(age[1]);
-
+/*
 let fName = ["Sahil", "Hussain", "Ayan"];
 let lName = ["Khan", "pathan", "shaikh"];
 let agee = [10, 20, 30];
-
-let result = fName.concat(lName, agee); // This will concatenate the three arrays into one
-console.log(result);
+*/
+// let result = fName.concat(lName, agee); // This will concatenate the three arrays into one
+// console.log(result);
 
 // let fullName = fName + lName; // This will not work as expected, it will just concatenate the two arrays as strings
 // console.log(fullName);
-let fulLen = fName.length();
-console.log(fulLen); // This will give the length of the fName array
+// let fulLen = fName.length();
+// console.log(fulLen); // This will give the length of the fName array
+
+/*
+let a = ["a", "b", "c"];
+let b = ["d", "e", "f"];
+let result = b.concat(a);
+document.writeln(result);*/ // This will concatenate the two arrays into one
+
+
+// let book = ["math", "english", "science", "urdu"];
+
+// book.length;
+// console.log(book.length); // This will give the length of the book array
+
+/*
+let book2 = [
+    ["math", "english", "science", "urdu"],
+    ["history", "geography", "economics", "political science"],
+    ["physics", "chemistry", "biology", "computer science"]
+];
+*/
+
+// book2[0][1] = "english literature"; // This will change the value of the second element in the first array
+// console.log(book2[0][1]); // This will print "english literature"
+
+// let nn = book2[2][2];
+// console.log(nn); // This will print "biology"
+// let bookRes = book2[2][2]="ammi jaan"
+// console.log(book2[2][2]); // This will print "ammi jaan"
+// console.log(bookRes); // This will print "ammi jaan"
+
+
+
+/*
+let book = ["math", "english", "science", "urdu", "history", "geography", "economics", "political science", "physics", "chemistry", "biology", "computer science"];
+let bookLen = book.length;
+book.forEach(myFun);
+for(i=0; i < bookLen; i++) {
+    document.writeln(`Book ${i+1} : ${book[i]} <br>`);
+}
+*/
+
+
+/*
+let  book = ["math", "english", "science", "urdu"];
+
+book.forEach(myFun);
+function myFun(name) {
+    console.log(name);
+}
+*/
+
+
+
+ /*
+let book = ["math", "english", "science", "urdu"];
+
+book.forEach(myFun);
+function myFun(value) {
+    console.log(value);
+}
+*/
+
+
+
+/*
+function name() {
+    console.log("This is a function");
+}
+
+name();
+name();
+*/
+
+
+
+/*
+function fun() {
+    for(i=1; i<=10; i++) {
+        console.log(`2 x ${i} = ${2*i}`);
+    }
+}
+fun();
+fun();
+fun();
+*/
+
+
+
+/*
+function table(number) { // number is a parameter
+
+    for(i=1; i<=10; i++) {
+        console.log(`${number} x ${i} = ${number*i}`);
+    }
+
+}
+
+table(5); // 5 is a argment
+*/
+
+
+
+/*
+function multi(first, second, third) {
+    console.log(first + second + third);
+}
+
+multi(9,2,3)
+*/
+
+
+
+
+
+/*
+function add() {
+    if(arguments.length === 0){
+        console.log("No arguments passed");
+    } else{
+        let sum = 0;
+        for(i=0; i<arguments.length; i++) {
+            sum = sum + arguments[i];
+        }
+        console.log(sum);
+    }
+
+}
+
+add(5,4,9,9,5,6,2,4,5)
+
+let addNew = add;
+addNew(5,4,9,9,5,6,2,44,5);
+*/
+
+
+
+/*
+function age(a,b) {
+    let c = a + b;
+    return c;
+}
+
+let d = age(5,5);
+console.log(d);
+*/
 
 
 
 
 
 
+// -----------------return------------------
+/*
+function age(age, vote) {
+    if(age > vote) {
+        return "You are eligible to vote";
+
+    } else if(age < vote) {
+        return "You are not eligible to vote";  
+
+    } else {
+        return "same age";
+    }
+}
+let result = age(12,12);
+
+console.log(result);
+*/
 
 
 
 
 
+// ---------------------------Global variable vs Local variable------------------------
+/*
+let age = 18;  // this is Global variable
+
+function result() {
+    console.log(age);
+}
+result()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+function name() {
+    let counter = 10; // this is Local variable...
+    console.log(counter);
+}
+name()
+*/
 
 
 
