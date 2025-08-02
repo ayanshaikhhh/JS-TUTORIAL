@@ -117,7 +117,7 @@ if (input === 1) {
 
 
 /*
-// comparision using switch statement
+// -----------------------------------comparision using switch statement------------------------------------------
 let input;
 input = 10; // you can change this value to test different cases 
 
@@ -155,7 +155,7 @@ switch (input) {
 
 
 
-// Loop in javaScript
+// ----------------------------------------Loop in javaScript-------------------------------------------------
 /*
 let counter = 0;
 while (counter <= 10) {
@@ -353,6 +353,12 @@ console.log(result);
 // let result = str.substring(8, 27);
 // console.log(result);
 
+
+
+
+
+
+// -------------------------------------------------IndexOf--------------------------------------------
 /*
 let para = "This is a paragraph. It contains multiple sentences. JavaScript is a versatile language.";
 
@@ -361,6 +367,13 @@ console.log(result);
 -*/
 
 
+
+
+
+
+
+
+// --------------------------------------------LastIndexOf-----------------------------------------
 /*
 let para = "This is a paragraph. It contains multiple sentences. JavaScript is a versatile language.";
 
@@ -369,6 +382,16 @@ console.log(result);
 */
 
 
+
+
+
+
+
+
+
+
+
+// -----------------------------------------Push and Pop----------------------------------------------
 /*
 let age = [10,20,30,40,50,60,70];
 console.log(age);
@@ -388,6 +411,13 @@ age.splice(2, 1, 25); // Replace the element at index 2 with 25
 console.log(age);
 */
 
+
+
+
+
+
+
+// ------------------------------------------------Array------------------------------------------------
 /*
 let age = [
     [10, 20, 30, 40, 50, 60, 70],
@@ -443,6 +473,9 @@ let book2 = [
 
 
 
+
+// ----------------------------------------------Loop------------------------------------------------
+
 /*
 let book = ["math", "english", "science", "urdu", "history", "geography", "economics", "political science", "physics", "chemistry", "biology", "computer science"];
 let bookLen = book.length;
@@ -473,7 +506,7 @@ function myFun(value) {
 }
 */
 
-
+// ---------------------------------------------Functions--------------------------------------------------
 
 /*
 function name() {
@@ -562,7 +595,7 @@ console.log(d);
 
 
 
-// -----------------return------------------
+// -----------------------------------------------Return-------------------------------------------------
 /*
 function age(age, vote) {
     if(age > vote) {
@@ -584,7 +617,7 @@ console.log(result);
 
 
 
-// ---------------------------Global variable vs Local variable------------------------
+// ------------------------------------Global variable vs Local variable--------------------------------------
 /*
 let age = 18;  // this is Global variable
 
@@ -605,6 +638,75 @@ name()
 
 
 
+// -------------------------------------------Anonymous Functions------------------------------------------------
+/*
+let result = function () {
+    console.log("Hello");
+}
+result();
+setTimeout(result,3000);
+
+
+
+setTimeout(function () {
+    console.log("anonymous functions")
+},4000)
+*/
+
+
+// ------------------------------------------Immediately invoked functions--------------------------------------
+/*
+function () {     // this is a demo........
+    console.log("heyyyyyyyyyyyyyyy")
+}
+*/
+
+/*
+(function () {
+    console.log("heyyyyyyyyyyyyyyy")
+}())
+*/
+
+/*
+(function () {
+
+    let msg = 123;
+    function show() {
+        console.log(msg)
+    }
+    show()
+})();
+*/
+
+
+
+
+// -----------------------------------------------Object-------------------------------------------------------
+/*
+let name = {
+    firstName : "sahil",
+    lastName : "khan",
+    age : 22,
+    address : "sojat city"
+}
+name.state = "rajasthan";
+let result = name.firstName;
+console.log(result);
+
+name.firstName = "hussain";
+console.log(name.firstName);
+console.log(name);
+
+delete name.firstName;
+console.log(name);
+
+console.log("address" in name);
+
+
+for (let key in name) {
+    console.log(key + " " + name[key]);
+}
+*/
 
 
 
@@ -613,6 +715,33 @@ name()
 
 
 
+// ------------------------------------------Object in method------------------------------------------
+/*
+let name = {
+    firstName : "sahil",
+    lastName : "khan",
+    age : 22,
+    address : "sojat city",
+    show : function () {
+        console.log("prgm is successfully" + " " + names.car + " " +  names.lastName);
+    }
+}
+
+
+
+
+
+let names = {
+    car : "tata",
+    lastName : "car",
+    age : 22,
+    address : "sojat city",
+    show () {
+        console.log("prgm is successfully");
+    }
+}
+name.show();
+*/
 
 
 
@@ -620,12 +749,7 @@ name()
 
 
 
-
-
-
-
-
-
+// -------------------------------------------------Math mathods----------------------------------------------------
 
 
 
