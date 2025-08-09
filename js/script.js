@@ -715,7 +715,7 @@ for (let key in name) {
 
 
 
-// ------------------------------------------Object in method------------------------------------------
+// ----------------------------------------------------Object in method------------------------------------------
 /*
 let name = {
     firstName : "sahil",
@@ -749,8 +749,627 @@ name.show();
 
 
 
-// -------------------------------------------------Math mathods----------------------------------------------------
+// ------------------------------------------------------Math mathods----------------------------------------------------
+// console.log(Math.PI);
+// console.log(Math.E);
 
+
+
+/*
+let x = Math.round(4.7);
+let a = Math.round(4.1);
+console.log(x);  // output 5
+console.log(a);  // output 4
+*/
+
+
+
+/*
+let s = Math.ceil(4.1);
+console.log(s); // output 5
+*/
+
+
+/*
+let y = Math.floor(4.10);
+console.log(y); // output 4
+*/
+
+
+/*
+let r = Math.trunc(5.6);
+console.log(r); // output 5
+*/
+
+
+/*
+let d = Math.pow(5,2);
+console.log(d);  // output 25
+*/
+
+
+/*
+let f = Math.sqrt(100,10);
+console.log(f); // output 10
+*/
+
+
+
+/*
+let a = Math.sqrt(49);
+console.log(a); // output 7
+*/
+
+/*
+let y = Math.min(7,8,5,4,62,4,7,50);
+console.log(y); // output 4
+*/
+
+
+/*
+let z = Math.max(7,8,5,4,62,4,7,50);
+console.log(z); // output 62
+*/
+
+
+
+// --------------------------------------------------------Random Number---------------------------------------------
+/*
+let res = Math.floor(Math.random()*10 + 1);
+console.log(res);
+*/
+
+
+/*
+let t = Math.floor(Math.random() * 10 - 20);
+console.log(t);
+*/
+
+
+
+/*
+function randomNumber (min, max) {
+    let x = Math.floor(Math.random() * (max - min + 1)) + min;
+    return;
+}
+randomNumber(10, 1);
+*/
+
+
+
+
+// ------------------------------------------------------Date---------------------------------------------
+/*
+let x = new Date();
+console.log(x);
+console.log(x.getFullYear());
+console.log(x.getMinutes());
+console.log(x.getDay());
+x.setFullYear(2030);
+console.log(x.getFullYear());
+console.log(new Date());
+*/
+
+
+
+/*
+let x = new Date("october 13, 2024 11:12:13");
+let y = new Date();
+
+if (y > x) {
+    console.log("x is past date")
+
+} else if (x > y){
+    console.log("x is future date")
+} else {
+    console.log("x is same date")
+}
+*/
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------New Keywords------------------------------------------------
+/*
+let person = new Object();
+person.name = "ankit";
+person.age = 25;
+console.log(person.name);
+console.log(person.age);
+console.log(person);
+*/
+
+
+
+
+
+
+// --------------------------------------------------Property Getters and Setters------------------------------------------------
+
+// let name = {
+//     name : "vahid",
+//     age : 22,
+
+/*
+    getname : function() {
+        return this.name.toUpperCase();
+    }
+*/
+
+    // get getname() {
+    //     return this.name.toUpperCase();
+    // }
+
+
+//     set setname(n) {
+//         this.name = n.toUpperCase();
+//     }
+// }
+
+// name.setname = "ajit";
+
+// console.log(name.name);
+
+
+
+
+// ------------------------------------------------Object Constructor Function---------------------------------------------
+/*
+function Student (first, last, age, cls) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.cls = cls;
+}
+
+
+let student1 = new Student("Sahil", "Khan", 22, "BCA");
+// console.log(student1);
+
+Student.state = "rajasthan";
+console.log(Student.state);
+
+
+student1.name = function() {
+    return this.firstName + " " + this.lastName;
+}
+console.log(student1.name())
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------Prototypes------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------Nested Object------------------------------------------
+/*
+let user = {
+    id : 101,
+    email : "abcd@gmail.com",
+    persnolInfo : {
+        fiirstName : "javed",
+        lastName : "khan",
+        age : 25,
+
+        address : {
+            city : "sojat",
+            state : "rajasthan",
+            country : "india",
+
+            pincode : {
+                code : 306104,
+                area : "sojat city"
+            }
+        }
+    }
+}
+
+console.log(user.persnolInfo.address.pincode);
+*/
+
+
+
+
+
+
+// -------------------------------------------------------Hoisting------------------------------------------
+/*
+hellow()
+function hellow(){
+    console.log("Hello World");
+}
+*/
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Document Object Model[DOM]------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Select an element by "ID"------------------------------------------------
+/*
+let second = document.getElementById("second");
+second.innerHTML = "<p> This is <br> the second <br> list item </p>";
+second.style.color = "red";
+second.style.mar
+console.log(second);
+second.style.listStyle = "none";
+*/
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Select an element by "Class Name"------------------------------------------------
+/*
+let cls = document.getElementsByClassName("list-items");
+console.log(cls.length);
+
+
+for(let i = 0; i <cls.length; i++) {
+    cls[i].style.color = "red";
+    cls[i].style.fontSize = "30px";
+    cls[i].style.fontWeight = "bold";
+    */
+/*
+    cls[i].style.listStyle = "none";
+    cls[i].style.backgroundColor = "yellow";
+    cls[i].style.padding = "10px";
+    cls[i].style.margin = "5px";
+    cls[i].style.border = "2px solid black";
+    cls[i].style.borderRadius = "5px";
+    cls[i].style.textAlign = "center";
+    cls[i].style.boxShadow = "2px 2px 5px rgba(0, 0, 0, 0.1)";
+    cls[i].style.transition = "all 0.3s ease";
+    cls[i].addEventListener("mouseover", function() {
+        cls[i].style.backgroundColor = "lightblue";
+    }
+    );
+    cls[i].addEventListener("mouseout", function() {
+        cls[i].style.backgroundColor = "yellow";
+    }
+    );
+*/
+
+/*
+    cls[i].innerHTML = "hello world";
+}
+*/
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Tag Name select------------------------------------------------
+/*
+let h2 = document.getElementsByTagName("h2");
+for(let i = 0; i<h2.length; i++) {
+    h2[i].innerHTML = "Hello World";
+}
+*/
+
+/*
+let div1 = document.getElementById("div1");
+let h2 = div1.getElementsByTagName("h2");
+let para = div1.getElementsByTagName("p");
+
+
+
+
+for(let i = 0; i < h2.length; i++) {
+    h2[i].innerHTML = "Hello World";
+    h2[i].style.color = "blue";
+    h2[i].style.fontSize = "30px";
+    h2[i].style.fontWeight = "bold";
+}
+
+
+for(let i = 0; i < para.length; i++) {
+    para[i].innerHTML = "this is a paragraph";
+}
+*/
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Query Selector [Is A Most Powerfull]------------------------------------------------
+/*
+let elm = document.querySelectorAll("p.intro");
+for (let i = 0; i < elm.length; i++) {
+    elm[i].innerHTML = "newwwwwww";
+}
+*/
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Traversing Elements------------------------------------------------------------------
+/*
+let elm = document.getElementById("intro");
+let listItems = document.getElementById("list-items");
+// let prt = elm.parentElement;
+// console.log(prt);
+// prt.innerHTML = "This is a parent element";
+
+
+let fir = listItems.firststElementChild;
+let last = listItems.lastElementChild;
+console.log(fir);
+let all = listItems.children;
+console.log(all);
+
+
+let cccc = elm.nextElementSibling;
+console.log(cccc);
+
+
+let sys = document.getElementById("sys");
+let ssssss = sys.nextElementSibling;
+console.log(ssssss);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------innerHTML--------------------------------------------------------------------
+// let elm = document.getElementById("intro");
+// let res = elm.innerHTML;
+// console.log(res);
+
+// elm.innerHTML="<h3>this is a para</h3>";
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Create And Append Element--------------------------------------------------------------------
+/*
+let elm = document.getElementById("intro");
+
+let h3 = document.createElement("h3");
+console.log(h3);
+
+
+elm.appendChild(h3);
+h3.innerHTML = "This is a new heading";
+
+h3.id = "newHeading";
+h3.className = "newClass";
+
+
+
+
+document.body.appendChild(h3);
+h3.style.fontSize = "30px";
+
+h3.innerHTML="cccccccccccc";
+h3.textContent="aaaaaaaaaaaaaaa";
+console.log(h3.textContent);
+
+
+
+let list = document.getElementById("list");
+let item = document.createElement("li");
+
+list.appendChild(item);
+item.innerHTML = "item4";
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Insert Before Function--------------------------------------------------------------------
+/*
+let list1 = document.getElementById("list");
+
+let item = document.createElement("li");
+item.textContent = "5";
+
+let pos = list1.firstElementChild;
+
+
+list1.insertBefore(item, pos)
+*/
+
+
+
+
+/*
+let parent = document.body;
+
+let elm = document.createElement("h2");
+elm.textContent="this is new element";
+
+let list = document.getElementById("list");
+
+parent.insertBefore(elm, list);
+*/
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Remove Child Element--------------------------------------------------------------------
+// let para = document.getElementById("menu");
+
+// let elm = para.firstElementChild;
+// let elm = para.firstElementChild.nextElementSibling;
+
+// para.removeChild(elm);
+
+// document.body.removeChild(para);
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Clone Element--------------------------------------------------------------------
+/*
+let menu = document.getElementById("menu");
+
+let elm = menu.cloneNode(true);
+
+document.body.appendChild(elm);
+
+elm.id = "new menu"
+
+console.log(menu)
+*/
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Replace Element--------------------------------------------------------------------
+/*
+let para = document.getElementById("menu");
+
+let item = document.createElement("li");
+item.textContent="services";
+
+let replace = para.firstElementChild.nextElementSibling;
+
+para.replaceChild(item, replace)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Insert AdjacentHTML--------------------------------------------------------------------
+/*
+let elm = document.getElementById("intro");
+let html = "<h2>this is a heading 2</h2>";
+ elm.insertAdjacentHTML("afterbegin", html)
+ elm.insertAdjacentHTML("afterend", html)
+ elm.insertAdjacentHTML("beforebegin", html)
+ elm.insertAdjacentHTML("beforeend", html)
+*/
 
 
 
