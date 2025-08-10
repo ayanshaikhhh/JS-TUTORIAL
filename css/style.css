@@ -1,9 +1,54 @@
-h1{
-    text-align: center;
-    /* color: red; */
-    font-size: 52px;
+/*---------------------------------------------------CSS Classes--------------------------------------------------*/
+
+.color{
+    background-color: goldenrod;
+    color: white;
 }
 
-body{
-    /* background-color: navy; */
+.dim {
+    border: 1px solid black;
+    padding: 100px;
 }
+
+.newClass{
+    font-size: 32px;
+}
+
+.newDim{
+    font-size: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

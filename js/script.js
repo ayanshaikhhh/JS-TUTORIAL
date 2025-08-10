@@ -1376,3 +1376,146 @@ let html = "<h2>this is a heading 2</h2>";
 
 
 
+
+
+
+
+
+
+
+// ---------------------------------------------------Change Attribute--------------------------------------------------
+// let btn = document.getElementById("btn");
+
+
+// btn.setAttribute("name", "name") // set attribute
+// btn.setAttribute("class", "newBtn")
+// let vlu = btn.getAttribute("name"); // get attribute
+// let vlu = btn.removeAttribute("name"); 
+// let vlu = btn.hasAttribute("name"); 
+// console.log(vlu);
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Inline Style--------------------------------------------------
+// let btn = document.getElementById("btn");
+// btn.style.cssText = "background-color: red; color: black; "
+// btn.setAttribute("style", "background-color: red; color: black;");
+// btn.style.color="red";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Get Computed CSS--------------------------------------------------
+/*
+let btn = document.getElementById("btn");
+let css = getComputedStyle(btn);
+console.log(css.color);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------CSS Classes--------------------------------------------------
+/*
+let box = document.getElementById("box");
+console.log(box.className);
+box.className +=" dim";   // add class
+console.log(box.classList);
+
+for(let css of box.classList) {
+    console.log(css);
+}
+
+box.classList.add("newClass"); // add class
+box.classList.remove("newClass"); // remove class
+box.classList.replace("dim", "newDim"); // replace class
+let res = box.classList.contains("newDim"); // check class
+console.log(res); // true or false
+*/
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------Width and Height of an Element--------------------------------------------------
+// let box = document.getElementById("box");
+// let width = box.offsetWidth; 
+// let height = box.offsetHeight;
+// let width = box.clientWidth;  
+// let height = box.clientHeight;
+// console.log(width);
+// console.log(height);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------------DOM Events--------------------------------------------------
+/* 1st way
+let btn = document.getElementById("btn");
+function sayHello() {
+    alert("btn was clicked 1st  way");
+}
+btn.addEventListener("click",sayHello);
+*/
+
+
+/* 2nd way 
+let btn = document.getElementById("btn");
+btn.addEventListener("click",function() {
+    alert("btn was clicked 2nd way");
+})
+*/
+
+
+
+
+
+
+
+
+
